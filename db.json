@@ -1,0 +1,16 @@
+const url = 'https://jokes-always.p.rapidapi.com/common';
+const options = {
+	method: 'GET',
+	headers: {
+		'x-rapidapi-key': '46fde85caemsh4a8e79a169e9897p156fa6jsnb13aa190f572',
+		'x-rapidapi-host': 'jokes-always.p.rapidapi.com'
+	}
+};
+
+try {
+	const response = await fetch(url, options);
+	const result = await response.text();
+	console.log(result);
+} catch (error) {
+	console.error(error);
+}
